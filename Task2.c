@@ -174,8 +174,7 @@ void findMeanStepCount() {
         totalSteps += fitnessDataArray[i].steps;
     }
 
-    int meanSteps = totalSteps / recordCount; 
-
+    int meanSteps = (int)(totalSteps * 1.0 / recordCount + 0.5); 
     printf("Mean step count: %d\n", meanSteps);
 }
     
